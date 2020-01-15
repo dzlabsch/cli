@@ -76,6 +76,7 @@ func defaultLeafTemplate(sub pkix.Name, iss pkix.Name) *x509.Certificate {
 		ExtKeyUsage: []x509.ExtKeyUsage{
 			x509.ExtKeyUsageServerAuth,
 			x509.ExtKeyUsageClientAuth,
+                        x509.ExtKeyUsageCodeSigning,
 		},
 		BasicConstraintsValid: false,
 		MaxPathLen:            0,
